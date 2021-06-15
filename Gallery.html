@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Gallegy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="Styling/style.css">
+
+    <!-- Link to main JS script -->
+    <script src="js/main.js"></script>
+
+    <!-- Link to magnifier script for gallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Link to magnifier css stylesheet for gallery -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+</head>
+
+
+<body style="background-color: white;">
+
+
+  <!--Header bar on the top of the page with the two icons-->
+    <!-- Adds invert fiter to contrast with the background -->
+    <header style="filter: invert(100%);">
+        <!--Home button on the left side of page-->
+        <a id="homeBtn" href="Index.html">
+            <div id="logo"> </div>
+        </a>
+
+        <!--Hamburger menu on the right side of the page that activates the JS nav function on a click -->
+        <div class="toggle" onclick="show()"></div>
+    </header>
+
+
+    <!--Navigation Menu (sidebar) for the navigation of the website-->
+    <nav>
+        <div id="sidebar" style="filter: invert(100%);">
+
+            <!--  Creates close button on the side to close the sidebar -->
+            <div id="closeBtn" onclick="show()"></div>
+
+            <!-- Unordered list that contains all of the links on the website -->
+            <ul>
+                <a href="Index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="Donate.html">
+                    <li>DONATE</li>
+                </a>
+                <!-- Link to an external website that is the store of the offical publisher -->
+                <a href="https://digital.darkhorse.com/pages/156/berserk">
+                    <li>SHOP BERSERK</li>
+                </a>
+                <a href="Statement.html">
+                    <li>STATEMENT</li>
+                </a>
+                <a href="Gallery.html">
+                    <li>GALLERY</li>
+                </a>
+            </ul>
+
+        </div>
+    </nav>
+
+    <main>
+        <!-- Container for entire gallery section -->
+        <div id="gallerySection">
+
+            <!-- Div for widh of image container -->
+            <div id="innerWidth">
+
+                <!-- Border div for gallery holder -->
+                <div id="galleryBorder">
+
+                    <!-- Gallery holder for various art and images -->
+                    <div class="galleryHolder">
+                        <a class="galleryImage" href="Images/gallery/demons.jpg" alt="Various Demons">
+                            <img src="Images/gallery/demons.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/griffithAndGuts.jpg" alt="Griffith and Guts colored artwork">
+                            <img src="Images/gallery/griffithAndGuts.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/fullArmor.jpg" alt="Guts in full armor">
+                            <img src="Images/gallery/fullArmor.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/miuraSitting1.png" alt="Kentaro Miura in office">
+                            <img src="Images/gallery/miuraSitting1.png">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/gutsChillin.jpg" alt="Guts plash art">
+                            <img src="Images/gallery/gutsChillin.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/gutsFighting2.jpg" alt="Guts slaying demons in color">
+                            <img src="Images/gallery/gutsFighting2.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/color1.jpg" alt="Colored art of Guts with faries">
+                            <img src="Images/gallery/color1.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/gutsAndCasca.jpg" alt="Guts with Casca">
+                            <img src="Images/gallery/gutsAndCasca.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/justGuts.png" alt="Guts wholesome smile">
+                            <img src="Images/gallery/justGuts.png">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/demons2.jpg" alt="Demon hoard">
+                            <img src="Images/gallery/demons2.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/miuraSitting2.jpg" alt="Kentaro Miura in office from side angle">
+                            <img src="Images/gallery/miuraSitting2.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/dragon.jpg" alt="Dragon on castle">
+                            <img src="Images/gallery/dragon.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/color2.jpg" alt="Early berserk ark colored">
+                            <img src="Images/gallery/color2.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/gutsAngry.jpg" alt="Guts MAD">
+                            <img src="Images/gallery/gutsAngry.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/demons3.jpg" alt="Demon apocalypse">
+                            <img src="Images/gallery/demons3.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/gutsSitting.jpg" alt="Guts sitting down at a sunset">
+                            <img src="Images/gallery/gutsSitting.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/gutsFighting1.jpg" alt="Guts ready to slay demons">
+                            <img src="Images/gallery/gutsFighting1.jpg">
+                        </a>
+                        <a class="galleryImage" href="Images/gallery/justMiura.jpg" alt="Kentaro Miura just chillin">
+                            <img src="Images/gallery/justMiura.jpg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Content container for the main links and logo of the footer -->
+        <div id="footerContent">
+
+            <!-- Places website logo -->
+            <div id="footerLogo"></div>
+
+            <!-- List of links to various webpages in the sitee-->
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="Donate.html">DONATE</a></li>
+                <li><a href="https://digital.darkhorse.com/pages/156/berserkv">SHOP BERSERK</a></li>
+                <li><a href="Statement.html">STATEMENT</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+            </ul>
+
+            <!-- List of icons to various sociall media websites for the topic -->
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/%20Berserk.Fanpage/"><img alt="facebook link" src="Images/Facebook.png"></a>
+                <a href="https://www.instagram.com/berserk/?hl=en"><img alt="instagram link" src="Images/Instagram.png"></a>
+                <a href="https://twitter.com/berserk_project"><img alt="twitter link"src="Images/twitter.png"></a>
+            </div>
+
+            <!-- Holds a container for a line image that scales with the website -->
+            <div id="LineHolder">
+                <img src="Images/FooterBackground.png">
+            </div>
+
+            <!-- Bottom section of the footer that contains copyright information -->
+            <div id="footerBottomSection">
+                <p>
+                    COPYRIGHT &copy;2021 PTEC. DESIGN BY <span style="opacity: 0.7;">AARON DAYRIT</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+
+
+<script>
+    // external magnifier script to allow the image to magnify when clicked
+    $(".galleryHolder").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        galleryHolder:{
+            enabled: true
+        }
+    });
+</script>

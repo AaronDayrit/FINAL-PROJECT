@@ -1,0 +1,171 @@
+  @import "../Base/all";
+  
+  // Base styling for footer tage
+    // Sets the position to relative and puts the container above everything
+    footer {
+        position: relative;
+        z-index: 10;
+
+        // Container for main links of footer
+        #footerContent {
+            width: 100%;
+            height: 330px;
+            display: flex;
+            color: white;
+            background-color: black;
+            font-family: bahnschrift, sans-serif;
+
+            // Styling for website logo in footer
+            #footerLogo {
+                width: 80px;
+                height: 50px;
+                filter: invert(100%);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-image: url(../Images/Logo.png);
+
+                margin: 90px 0px 0px 70px;
+                z-index: 10;
+
+                transition: 0.3s;
+            }
+
+        }
+
+        // container for bottom section footer that contains copyright section
+        #footerBottomSection {
+            height: 30px;
+            width: 100%;
+            font-size: 12px;
+            background-color: $blackBackground;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 330px;
+        }
+    }
+
+
+    // Styling for UNORDERED-LIST container of links to other pages
+    #footerContent ul {
+        transition: 0.3s;
+        padding-top: 57px;
+        padding-left: 30px;
+        height: 65px;
+        width: 200px;
+        z-index: 30;
+
+        // Sets list item to have no styling
+        li {
+            list-style: none;
+            padding: 2px;
+
+            // Styling for anchor tags inside the list
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+
+                z-index: 100;
+                transition: 0.3s;
+            }
+
+            a:hover {
+                opacity: 0.65;
+            }
+        }
+
+    }
+
+    // styling for the container of social media links of the footer
+    .socialIcons {
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 255px;
+        position: absolute;
+        z-index: 30;
+
+        // Image styling that contains the social media links
+        img {
+            width: 30px;
+            height: 30px;
+            filter: invert(100%);
+            margin-left: 10px;
+            margin-right: 10px;
+
+            transition: 0.3s;
+        }
+
+        img:hover {
+
+            opacity: 0.65;
+        }
+    }
+
+    // Container for white line that seperates the footer
+    #LineHolder {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 100px;
+
+        transform: translateX(-50%);
+
+        img {
+            height: 180px;
+            width: 100%;
+            z-index: 0;
+
+        }
+    }
+
+    //Media query that shifts the logo and list of links to the left
+    @media screen and (max-width:700px) {
+
+        #footerContent {
+
+
+            #footerLogo {
+                transform: translateX(-35px);
+            }
+
+            ul {
+                transform: translate(-50px, 5px);
+
+                li {
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    //Media query that shifts the logo and list of links to the left more and changes font size
+    @media screen and (max-width:610px) {
+        #footerContent {
+
+
+            #footerLogo {
+                transform: translateX(-40px);
+            }
+
+            ul {
+                transform: translate(-65px, 5px);
+
+                li {
+
+                    a {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }

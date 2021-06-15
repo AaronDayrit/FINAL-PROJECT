@@ -1,0 +1,51 @@
+// Container div styling that houses paragraph
+#statementPiece {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    padding-bottom: 85px;
+
+    // paragraph styling thaat sets sizing and line height
+    p {
+        padding-top: 85px;
+        font-size: 16px;
+        width: 75%;
+    
+        line-height: 2.5;
+    
+        background-color: white;
+    
+        font-family: calibri, arial, sans-serif;
+    }
+}
+
+// class that moves element to the right of page
+.moveRight {
+    float: right;
+}
+
+// class that changes size up as a header
+.statementHeader {
+    font-size: 28px;
+}
+
+// media query that changes at a max width of 630px
+@media screen and (max-width:630px) {
+
+    // Changes width of paragraph text to fix a smaller screen size
+    #statementPiece{
+        p{
+            width:70%;
+        }
+    }
+}
+
+// media query that changes at a max width of 550px
+@media screen and (max-width:550px) {
+    #statementPiece{
+           // Changes width of paragraph text to fix a smaller screen size
+        p{
+            width:60%;
+        }
+    }
+}

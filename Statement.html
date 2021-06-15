@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Statement</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="Styling/style.css">
+
+    <!-- Link to main JS file -->
+    <script src="js/main.js"></script>
+</head>
+
+
+
+<body style="background-color: white;">
+
+
+    <!--Header bar on the top of the page with the two icons-->
+    <!-- Adds invert fiter to contrast with the background -->
+    <header style="filter: invert(100%);">
+        <!--Home button on the left side of page-->
+        <a id="homeBtn" href="Index.html">
+            <div id="logo"> </div>
+        </a>
+
+        <!--Hamburger menu on the right side of the page that activates the JS nav function on a click -->
+        <!-- Tried making this an id, it wouldn't function though -->
+        <div class="toggle" onclick="show()"></div>
+    </header>
+
+
+    <!--Navigation Menu (sidebar) for the navigation of the website-->
+    <nav>
+        <div id="sidebar" style="filter: invert(100%);">
+
+            <!--  Creates close button on the side to close the sidebar -->
+            <div id="closeBtn" onclick="show()"></div>
+
+            <!-- Unordered list that contains all of the links on the website -->
+            <ul>
+                <a href="Index.html">
+                    <li>HOME</li>
+                </a>
+                <a href="Donate.html">
+                    <li>DONATE</li>
+                </a>
+                <!-- Link to an external website that is the store of the offical publisher -->
+                <a href="https://digital.darkhorse.com/pages/156/berserk">
+                    <li>SHOP BERSERK</li>
+                </a>
+                <a href="Statement.html">
+                    <li>STATEMENT</li>
+                </a>
+                <a href="Gallery.html">
+                    <li>GALLERY</li>
+                </a>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <main style="background-color: white;">
+
+        <!-- Holder for all the statements in each language -->
+        <!--OFFICIAL SOURCE OF INFORMATION:
+            https://www.hakusensha.co.jp/information/60696/ 
+         -->
+        <div id="statementPiece">
+
+            <!-- Japanese section of statement -->
+            <p id="japaneseStatement">
+                <!-- Main header 
+                    Changes sizing (Specific to only japanese )
+
+                    -Didn't like how the headings looked
+                -->
+                <span class="statementHeader" style="font-size: 24px">訃報　三浦建太郎先生が逝去されました</span>
+                <br>
+                <span style="font-size: 13px;">2021.05.20</span>
+                <br>
+                漫画家の三浦建太郎先生が、2021年5月6日14時48分、急性大動脈解離のため、ご逝去されました。享年54歳でした。
+                <br>
+                三浦先生の画業に最大の敬意と感謝を表しますとともに、心よりご冥福をお祈りいたします。
+                <br>
+                なお告別式はご家族にて執り行われました。
+                <br>
+                三浦先生には、永年にわたり白泉社で『ベルセルク』をはじめとする人気作品の数々をご執筆いただきました。現在もヤングアニマルにて同作を、一昨年からはヤングアニマルZEROで『ドゥルアンキ』を連載中でした。
+                <br>
+                読者の皆様には、三浦先生の作品をご愛読いただきましたことを深謝いたしますとともに、謹んでご逝去のご報告をお知らせ申し上げます。
+
+                <br><br>
+                <!--Line floated to the right -->
+                <span class="moveRight">株式会社白泉社</span>
+                <br><br>
+
+                三浦建太郎先生の突然の訃報に接し、ヤングアニマル編集部は深い悲しみに包まれています。
+                <br>
+                この受けいれがたい事実をどのように捉えたらいいのか。正直、言葉が見つかりません。思い出されるのは、編集部の人間に会うと、いつも朗らかにご自分の好きな漫画やアニメ、映画の話などを楽しく語っていた時の笑顔ばかりです。我々は三浦先生の怒った顔を見たことがありません。いつも楽しそうな少年のような方でした。
+                <br>
+                どうかファンの皆様、関係者の皆様、三浦先生の楽しそうな笑顔を想像していただき、ヤングアニマル編集部と共に静かにご冥福を祈っていただければと存じます。何卒よろしくお願い申し上げます。
+                <br>
+                <!--Line floated to the right -->
+                <br>
+                <span class="moveRight">ヤングアニマル編集部一同</span>
+            </p>
+
+
+            <!-- English translation of the japanese statement -->
+            <p id="englishStatement" style="font-family: calibri, arial, sans-serif;">
+
+                <span class="statementHeader">RIP to Kentaro Miura</span>
+                <br>
+                Manga artist Kentaro Miura passed away at 14:48 on May 6, 2021 due to acute aortic dissection. He was
+                54.
+                <br>
+                We would like to express our deepest respect and appreciation for his artistic work and pray that his
+                soul rests in peace.
+                <br>
+                Miura’s family held a funeral.
+                <br>
+                Kentaro Miura worked on his series Berserk, and many other popular stories for Hakusensha over the
+                years. Berserk is currently serialized in the Young Animal comics, and Dur-An-Ki has been on the
+                Young Animal Zero, starting two years ago.
+                <br>
+                We would like to take this opportunity to thank all of our readers for having loved his works. Please
+                accept our most heartfelt condolences on his passing.
+
+                <br><br>
+                <!--Line floated to the right -->
+                <span class="moveRight">Hakusensha</span>
+                <br><br>
+
+                All personnel in the Young Animal Editing Department are deeply disturbed and saddened by the sudden
+                death of Kentaro Miura.
+                <br>
+                We have been at a loss as to how to cope with this painful reality. We just cannot find the words to be
+                honest. Our memories of him are delightful and filled with his smile from the times when we were
+                together; he always talked so happily about his favorite comics, cartoons, and movies. We had honestly
+                never seen him angry or upset. He was a happy person with the heart of a young boy.
+                <br>
+                We would like all his fans and persons related to imagine him smiling joyfully and pray silently with us
+                for the repose of his soul. We appreciate your kind understanding.
+
+                <!--Line floated to the right -->
+                <span class="moveRight">
+                    <br><br>
+                    <span class="moveRight"> Sincerely,</span>
+                    <br>
+                    Young Animal Editing Department
+                    <br><br>
+                </span>
+            </p>
+
+            <!-- French translateion of Japanese statement -->
+            <p id="frenchStatement">
+                <span class="statementHeader">Décès du mangaka Kentaro Miura</span>
+                <br>
+                Le mangaka Kentaro Miura est décédé le 6 mai 2021 à 14h48 des suites d’une dissection aortique aiguë. Il
+                avait 54 ans.
+                <br>
+                Nous tenons à exprimer notre immense respect et toute notre gratitude pour son travail. Que son âme
+                repose en paix.
+                <br>
+                La cérémonie d’adieu a été organisée par la famille.
+                <br>
+                Kentaro Miura a produit de nombreux mangas célèbres tels que « Berserk » pour la maison d’édition de
+                manga Hakusensha durant de nombreuses années. Berserk est prépublié dans le magazine Young Animal, et
+                depuis l’année dernière, son manga « Duranki » a été prépublié dans le magazine Young Animal ZERO.
+                <br>
+                Nous exprimons notre sincère gratitude à tous nos lecteurs concernant le travail de Kentaro Miura, et
+                annonçons avec regret son décès.
+
+                <!--Line floated to the right -->
+                <br><br>
+                <span class="moveRight">Hakusensha</span>
+                <br><br>
+
+                Toute la rédaction de Young Animal est profondément attristée par cette nouvelle soudaine concernant
+                Kentaro Miura.
+                <br>
+                Comment faire face à ce fait tragique ? Pour être honnête, nous ne trouvons pas les mots. Nous nous
+                souviendrons toujours de son sourire chaque fois qu’il rencontrait quelqu’un dans le département
+                éditorial, alors qu’il parlait avec enthousiasme de ses mangas, animés et films préférés. Nous ne
+                l’avons jamais vu en colère. Il était comme un petit garçon qui semblait toujours s’amuser.
+                <br>
+                Nous espérons que tous les fans et toutes les personnes concernées pourront garder en mémoire le sourire
+                heureux qu’avait Kentaro Miura sur son visage. Puissiez-vous prier avec nous, la rédaction de Young
+                Animal, pour que son âme repose en paix. Nous vous remercions pour votre support.
+
+                <!--Line floated to the right -->
+                <br><br>
+                <span class="moveRight">Département éditorial de Young Animal</span>
+                <br><br>
+            </p>
+
+            <!-- Korean translation of Japanese statement -->
+            <p id="koreanStatement">
+
+                <span class="statementHeader" style="font-size: 24px">부고　미우라 겐타로 선생님께서 별세하셨습니다</span>
+                <br>
+                만화가 미우라 겐타로 선생님께서 2021년 5월 6일 14시 48분에 급성 대동맥 박리로 인해 향년 만 54세로 별세하셨습니다.
+                <br>
+                미우라 선생님의 업적에 최대의 경의와 감사를 표하며, 진심으로 명복을 빕니다.
+                <br>
+                고별식은 가족장으로 치뤄졌습니다.
+                <br>
+                미우라 선생님은 오랜 세월 하쿠센샤에서 “베르세르크”를 비롯한 다수의 인기 작품을 집필하셨습니다. 현재도 영 애니멀에 “베르세르크”를 연재하고 재작년부터 영 애니멀 ZERO에
+                “DUR-AN-KI”를 연재 중이셨습니다.
+                <br>
+                미우라 선생님의 작품을 애독해 주신 독자 여러분께 깊이 감사드리며, 삼가 고인의 별세 소식을 전합니다.
+
+                <!--Line floated to the right -->
+                <br> <br>
+                <span class="moveRight">주식회사 하쿠센샤</span>
+                <br> <br>
+
+                미우라 겐타로 선생님의 갑작스러운 부고 소식에 영 애니멀 편집부는 깊은 슬픔에 잠겨 있습니다.
+                <br>
+                선생님께서 돌아가셨다는 현실을 받아들이기 힘들고 아무런 말도 나오지 않습니다. 편집부 사람들을 만날 때마다 언제나 밝게 웃으면서 좋아하시는 만화나 애니메이션, 영화에 대해 즐겁게
+                말씀하시던 모습들만 떠오릅니다. 우리는 미우라 선생님이 화내는 것을 본 적이 없습니다. 항상 즐거운 소년과 같은 분이셨습니다.
+                <br>
+                팬 여러분, 관계자 여러분, 부디 미우라 선생님이 즐겁게 웃는 모습을 상상하면서 영 애니멀 편집부와 함께 조용히 고인의 명복을 빌어 주시기 바랍니다. 감사합니다.
+
+                <!--Line floated to the right -->
+                <br> <br>
+                <span class="moveRight">영 애니멀 편집부 일동</span>
+                <br> <br>
+            </p>
+
+            <!-- Chinese translation of Japanese statement -->
+            <p id="chineseStatement">
+
+                <span class="statementHeader" style="font-size: 24px">訃告　三浦建太郎老師逝世</span>
+                <br>
+                漫畫家三浦建太郎老師於2021年5月6日14時48分，因急性主動脈剝離而不幸逝世。享年54歲。
+                <br>
+                謹向三浦老師的漫畫事業致以最崇高的敬意和感謝，願逝者安息。
+                <br>
+                三浦老師的過告別儀式已由其家人舉辦。
+                <br>
+                長久以來，三浦老師透過白泉社發表了《烙印勇士》等諸多人氣作品。現在該作品也依然在《YOUNG ANIMAL》上連載。前年三浦老師還開始在《YOUNG ANIMAL ZERO》上連載《DUR-AN-KI》。
+                <br>
+                我們由衷感謝各位讀者對三浦老師作品的厚愛，並十分遺憾地通知這令人痛心的消息。
+
+                <!--Line floated to the right -->
+                <br> <br>
+                <span class="moveRight">株式會社白泉社</span>
+                <br> <br>
+
+
+                突聞三浦建太郎老師的訃告，YOUNG ANIMAL編輯部陷入了一片悲傷之中。
+                <br>
+                面對這樣一個難以接受的事實，我們根本不知道該說些什麼。我們所能回想起的，都是三浦老師每次遇到我們編輯部的同仁時，總是興致勃勃地談論自己喜歡的漫畫、卡通和電影等時的笑容。我們從未見過三浦老師生氣的樣子。他總是一副樂天派的少年感。
+                <br>
+                懇請各位粉絲和相關人士想像一下三浦老師的開心笑容，與YOUNG ANIMAL編輯部一起，靜靜地為老師祈禱冥福。感謝大家。
+
+                <!--Line floated to the right -->
+                <br> <br>
+                <span class="moveRight">YOUNG ANIMAL編輯部全體同仁</span>
+                <br> <br>
+            </p>
+        </div>
+    </main>
+
+
+
+
+
+
+
+
+
+    <!-- Footer section -->
+    <footer>
+        <!-- Content container for the main links and logo of the footer -->
+        <div id="footerContent">
+
+            <!-- Places website logo -->
+            <div id="footerLogo"></div>
+
+            <!-- List of links to various webpages in the sitee-->
+            <ul>
+                <li><a href="Index.html">HOME</a></li>
+                <li><a href="Donate.html">DONATE</a></li>
+                <li><a href="https://digital.darkhorse.com/pages/156/berserkv">SHOP BERSERK</a></li>
+                <li><a href="Statement.html">STATEMENT</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+            </ul>
+
+            <!-- List of icons to various sociall media websites for the topic -->
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/%20Berserk.Fanpage/"><img alt="facebook link" src="Images/Facebook.png"></a>
+                <a href="https://www.instagram.com/berserk/?hl=en"><img alt="instagram link" src="Images/Instagram.png"></a>
+                <a href="https://twitter.com/berserk_project"><img alt="twitter link"src="Images/twitter.png"></a>
+            </div>
+
+            <!-- Holds a container for a line image that scales with the website -->
+            <div id="LineHolder">
+                <img src="Images/FooterBackground.png">
+            </div>
+
+            <!-- Bottom section of the footer that contains copyright information -->
+            <div id="footerBottomSection">
+                <p>
+                    COPYRIGHT &copy;2021 PTEC. DESIGN BY <span style="opacity: 0.7;">AARON DAYRIT</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

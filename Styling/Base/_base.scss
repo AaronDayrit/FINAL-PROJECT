@@ -1,0 +1,32 @@
+$blackBackground: rgb(12, 12, 12);
+$redBackground: rgb(255, 51, 51);
+
+//  base styling for every element
+*{
+    margin: 0%;
+    padding: 0%;
+
+    box-sizing: border-box;
+  
+
+}
+
+// Styling for body and html tag
+// Gives a new bakground color of black and states animation timing
+body, html{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    animation: fadeIn 0.5s forwards;
+}
+
+// Fading animation of website content
+@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }

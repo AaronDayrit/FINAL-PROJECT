@@ -1,0 +1,93 @@
+    // base styling container for sidebar nav
+    #sidebar {
+        position: fixed;
+        width: 300px;
+        height: 100%;
+
+        background-color: white;
+
+        right: -300px;
+        transition: 0.7s;
+        z-index: 100;
+
+        transition: 0.7s;
+
+        // List styling for navigation links
+        ul li {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            padding: 20px 25px;
+            font-family: bahnschrift, sans-serif;
+            color: black;
+
+            transition: 0.3s;
+        }
+
+        ul {
+            margin-top: 40%;
+
+        }
+
+        li {
+            transition: background-color 0.35s;
+        }
+
+        // Animation background color of navigation
+        li:hover {
+            background-color: rgb(230, 230, 230);
+
+        }
+
+        // Styling for anchor tag of navigation links
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+
+    // When the sidebar is set to active, moves it out of sight
+    #sidebar.active {
+        right: 0;
+        transition: 0.7s;
+
+
+    }
+
+    // Close button styling that closes the nav when pressed
+    #closeBtn {
+        height: 32px;
+        width: 32px;
+        position: absolute;
+        right: 0;
+        background-image: url(../Images/close.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        cursor: pointer;
+        margin-top: 30px;
+        margin-right: 40px;
+
+        transition: opacity 0.3s;
+
+        float: right;
+    }
+
+    #closeBtn:hover {
+        opacity: 0.7;
+    }
+
+
+    // Media query that shrinks the side bar container rand font text 
+    @media screen and (max-width:610px) {
+        #sidebar {
+            width: 250px;
+
+            ul li {
+                font-size: 18px;
+            }
+        }
+    }

@@ -1,0 +1,170 @@
+@import"../Base/all";   
+   
+   
+   // Div container syling that holds the payment section
+    #paymentSectionContainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../Images/donateBackground.png);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        font-family: bahnschrift, sans-serif;
+
+
+    }
+
+    // Div container syling that holds the payment section
+    #payment {
+        background-color: white;
+        width: 600px;
+        margin: 100px auto;
+        height: auto;
+        padding: 30px;
+        padding-top: 40px;
+        border-radius: 1px;
+        position: relative;
+        z-index: 10;
+        box-shadow: 0 0 8px 2px black;
+        transition: 0.3s;
+
+        // Spacing and sizing of headings of Payment section
+        h2 {
+            text-align: center;
+
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid black;
+
+        }
+    }
+
+
+    .form {
+
+        // label class section for each box styling
+        .labels {
+            display: block;
+            color: black;
+            margin: 6px;
+        }
+
+        // Styling for the input boxes
+        .input {
+            padding: 13px 0 13px 25px;
+            width: 100%;
+            height: 40px;
+            padding-left: 40px;
+            border: 1px solid black;
+            border-radius: 1px;
+            letter-spacing: 1px;
+            word-wrap: 3px;
+            outline: none;
+            font-size: 16px;
+            color: black;
+            transition: box-shadow 0.3s;
+        }
+    }
+
+    // Class/Id for sections that need to be divided into two boxes
+    .card-grp,
+    #addressInfo,
+    #moreCardInfoholder,
+    #namingInfo {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    // Class/Id for sections that need to be divided into two boxes and gives space between each element
+    .card-item,
+    .additionalCardInfo,
+    .names {
+        width: 48%;
+    }
+
+    // Gives space at the bottom of a section
+    .space {
+        margin-bottom: 20px;
+    }
+
+    // Class that gives element the position of relative
+    .icon-relative {
+        position: relative;
+    }
+
+    // Styling of Icoms and sets positioning and size
+    .icon-relative .fas {
+        position: absolute;
+        bottom: 10px;
+        left: 15px;
+        font-size: 20px;
+        color: black;
+    }
+
+    // Styling of Icoms and sets positioning and size
+    #donationSubmitBtn {
+        margin-top: 40px;
+        padding: 12px;
+        background: black;
+        color: white;
+        text-align: center;
+        border-radius: 2px;
+        cursor: pointer;
+        width: 100%;
+        height: 40px;
+
+        transition: 0.3s;
+
+    }
+
+    //Gives a shadow to input class when hovering or when focused   
+    .input:focus,
+    .input:hover {
+        box-shadow: 0 0 2px 1px black;
+
+    }
+
+    //Opacity transition when hovering over the submit button
+    #donationSubmitBtn:focus,
+    #donationSubmitBtn:hover {
+        background-color: $redBackground;
+
+    }
+
+    //Media queery for max-width 850px
+    @media screen and (max-width:850px) {
+
+        // Styles the payment section smaller for screen sizes
+        #payment {
+            width: 500px;
+        }
+    }
+
+    //Media queery for max-width 685px
+    @media screen and (max-width:685px) {
+
+        // Styles the payment section smaller for screen sizes
+        #payment {
+            width: 400px;
+        }
+
+    }
+
+    //Media queery for max-width 575px
+    @media screen and (max-width:575px) {
+
+        // Styles the payment section smaller for screen sizes
+        #payment {
+            width: 340px;
+
+            // shrinks the font-sizing
+            .labels {
+                font-size: 16px;
+            }
+
+        }
+        
+    }

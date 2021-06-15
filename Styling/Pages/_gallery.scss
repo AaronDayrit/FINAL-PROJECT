@@ -1,0 +1,117 @@
+    // Styles sizing for the main gallery container
+    #gallerySection {
+        width: 100%;
+        padding: 100px 0;
+        background: white;
+    }
+
+    // Sizing for the width and spacing of gallery section
+    #innerWidth {
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px;
+    }
+
+    // Sizing for the width and spacing of gallery section
+    .galleryImage {
+
+        img {
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            margin: 2px;
+            cursor: pointer;
+            z-index: 10;
+            position: relative;
+            transition: 0.4s;
+
+        }
+    }
+
+    // Styling container that holds all the images of gallery
+    .galleryHolder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    //Media query with a max width of 1150px
+    @media screen and (max-width:1150px) {
+
+        //Scales down the sizing of images
+        .galleryImage img {
+            height: 250px;
+            width: 250px;
+
+        }
+
+        //Shrinks the width for smaller screens
+        #innerWidth {
+            max-width: 1000px;
+        }
+    }
+
+    //Media query with a max width of 950px
+    @media screen and (max-width:950px) {
+
+        //Scales down the sizing of images
+        .galleryImage img {
+            height: 200px;
+            width: 200px;
+
+        }
+
+        //Shrinks the width for smaller screens
+        #innerWidth {
+            max-width: 800px;
+        }
+    }
+
+    //Media query with a max width of 800px
+    @media screen and (max-width:800px) {
+
+        //Scales down the sizing of images
+        .galleryImage img {
+            height: 170px;
+            width: 170px;
+
+        }
+
+        //Shrinks the width for smaller screens
+        #innerWidth {
+            max-width: 600px;
+        }
+    }
+
+    //Media query with a max width of 700px
+    @media screen and (max-width:700px) {
+
+        //Scales down the sizing of images
+        .galleryImage img {
+            height: 200px;
+            width: 200px;
+
+        }
+
+        //Shrinks the width for smaller screens
+        #innerWidth {
+            max-width: 500px;
+        }
+    }
+
+    //Media query with a max width of 610px
+    @media screen and (max-width:610px) {
+
+        //Scales down the sizing of images
+        .galleryImage img {
+            height: 300px;
+            width: 300px;
+
+        }
+
+        //Shrinks the width for smaller screens
+        #innerWidth {
+            max-width: 500px;
+        }
+    }
